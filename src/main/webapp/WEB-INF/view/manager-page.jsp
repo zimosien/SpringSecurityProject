@@ -12,30 +12,22 @@
 <html>
 
 <head>
-    <title>Company Home Page</title>
+    <title>Manager</title>
 </head>
 
 <body>
-<h2>Company Home Page</h2>
+<h2>Company Manager Page</h2>
 <hr>
 
-Welcome to the company home page!
+Welcome to the company Manager page!
 <br>
-<%-- user and its roles display--%>
-User: <security:authentication property="principal.username"/>
 <br>
 Role: <security:authentication property="principal.authorities"/>
 <br>
+The bonuses are going to be off the chart this year!!
 <br>
 
-<security:authorize access="hasRole('MANAGER')">
-    <a href="${pageContext.request.contextPath}/manager"> Managers special treat </a> (only for managers)
-</security:authorize>
-<br>
-<br>
-<security:authorize access="hasRole('ADMIN')">
-    <a href="${pageContext.request.contextPath}/admin">Administrators special gathering</a>(admins only)
-</security:authorize>
+<a href="${pageContext.request.contextPath}/"> back to home page </a>
 <br>
 <br>
 
