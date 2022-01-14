@@ -15,6 +15,8 @@ public class DemoAppConfig {
 
     // define a bean for ViewResolver
 
+
+
     @Bean
     public ViewResolver viewResolver() {
 
